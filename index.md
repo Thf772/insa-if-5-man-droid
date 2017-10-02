@@ -15,4 +15,4 @@ sections:
     text:  ""
 ---
 
-Droïde de Protocole pour le Brainstorming 7360 iBrainstorm
+Droïde de Protocole pour le Brainstorming 
