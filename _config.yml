@@ -1,1 +1,7 @@
-theme: jekyll-theme-cayman
+title: iBrainstorm
+description: "A Site Starter Materialize Templates for Jekyll"
+
+github_username:  Thf772
+
+sass:
+    style: compressed
