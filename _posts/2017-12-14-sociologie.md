@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sociologie
-description: Sociologie
+description: Sociologie maggle
 image: assets/images/pic01.jpg
 ---
 

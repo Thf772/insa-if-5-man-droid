@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Marketting
-description: Marketting
+description: Marketting maggle
 image: assets/images/pic01.jpg
 ---
 
