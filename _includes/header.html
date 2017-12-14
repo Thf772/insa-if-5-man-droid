@@ -24,7 +24,7 @@
 		{% endfor %}
 		{% for post in site.posts %}
 		    {% if page.layout != "home" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+		        <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
 		    {% endif %}
 		{% endfor %}
 	</ul>
