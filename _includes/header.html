@@ -1,32 +1,30 @@
-<nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}"><img height="30px" width="auto" src="/Logomakr_2N55RB.png" /> 7360 iBrainstorm</a>
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
+<!-- Wrapper -->
+<div id="wrapper">
 
-          <ul class="right hide-on-med-and-down">
-            <li><a href="{{ "/" | relative_url }}">Accueil </a></li>
-            {% if page_paths %}
-                {% for path in page_paths %}
-                    {% assign my_page = site.pages | where: "path", path | first %}
-                    {% if my_page.title %}
-                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                    {% endif %}
-                {% endfor %}
-            {% endif %}              
-          </ul>
+<!-- Header -->
+<header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
+	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
 
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Accueil</a></li>
-                            {% if page_paths %}
-                {% for path in page_paths %}
-                    {% assign my_page = site.pages | where: "path", path | first %}
-                    {% if my_page.title %}
-                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                    {% endif %}
-                {% endfor %}
-            {% endif %} 
-          </ul>        
-
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        {% for page in site.pages %}
+		    {% if page.layout == "home" %}
+		        <li><a href="{{ "" | absolute_url }}/">{{ page.title }}</a></li>
+	    	{% endif %}
+		{% endfor %}
+		{% for page in site.pages %}
+		    {% if page.layout != "home" and page.nav-menu == true %}
+		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+		    {% endif %}
+		{% endfor %}
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
 </nav>

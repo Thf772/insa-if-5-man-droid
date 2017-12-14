@@ -1,70 +1,55 @@
----
-layout: default
----
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">{{ site.title }}</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">{{ content }}</h5>
-      </div>
-        
-		<!--
-      <div class="row center">
-        <a href="{{ site.big_red_button }}" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
-	  -->
+{% include head.html %}
 
-    </div>
-  </div>
+<body>
 
-  <div class="container">
-    <div class="section">
+    {% include header.html %}
 
-      <!--   Icon Section   -->
-      <div class="row">
-	  {%for sec in page.sections %}
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">{{ sec.icon }}</i></h2>
-            <h5 class="center">{{ sec.title }}</h5>
-            <p class="light">{{ sec.text }}</p>
-          </div>
-		</div>
-	  {% endfor %}
-      </div>
-    </div>
-  </div>
-  
-  <div class="container">
-    <p>
-	  Le projet iBrainstorm, et son incarnation par notre premier modèle, le '7360 iBrainstorm' est une initiative de développement disruptive visant à révolutionner les séances de créativité.
-	  </br>
-	  Il existe aujourd'hui déjà bien des logiciels d'aide à la décision, mais aucune solution ne propose une intégration aussi aboutie et efficace que le '7360 iBrainstorm' quand il s'agît de s'intégrer efficacement dans une réunion, y introduire de nouvelles idées selon le contexte, rediriger et contrôler le flux de la discussion de façon à optimiser les prises de parole.
-	</p>
-  </div>
-
-    <div style="background: #ddd">
-    <div class="container last-post">
-    <section>
-        <h5>Latest Post</h5>
-        <ul class="collection">
-        {% for post in site.posts %}
-        <li class="collection-item avatar">
-          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
-          <div class="date-post">{{ post.date | date: date_format }}</div>
-          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-          <p>
-             {{ post.content | truncatewords: 10 }}
-          </p>
-          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
-        </li>
-        {% endfor %}
-        </ul>  
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ page.landing-title }}</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: uppercase;">{{ site.description }}</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
-    </div>
-</div>
 
-  </div>
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        {% include tiles.html %}
+
+        <!-- Two -->
+        <section id="two">
+            <div class="inner">
+                <header class="major">
+                    <h2>Massa libero</h2>
+                </header>
+                <p>{{ content }}</p>
+                <ul class="actions">
+                    <li><a href="landing.html" class="button next">Get Started</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

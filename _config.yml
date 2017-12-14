@@ -1,7 +1,36 @@
-title: "7360 iBrainstorm"
-description: "Automatiser le brainstorming"
+# site settings
+title: Forty
+subtitle: by HTML5 UP
+email: youremailaddress@gmail.com
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author:
+street_address: 20 avenue ALbert Einstein
+city: Villeurbanne CEDEX
+state: 69
+zip_code: 69621
+country: France
+phone:
 
-github_username:  Thf772
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: 
+googleplus_url: 
+instagram_url: 
+linkedin_url: 
+pinterest_url:
+slack_url:
+twitter_url: 
+
+# build settings
+markdown: kramdown
 
 sass:
-    style: compressed
+  style: compressed
