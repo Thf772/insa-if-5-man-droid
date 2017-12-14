@@ -2,9 +2,9 @@
 layout: home
 title: iBrainstorm
 landing-title: 'iBrainstorm, le Droïde de Brainstorming'
-description: null
-image: null
-author: null
+description: 'iBrainstorm, le Droïde de Brainstorming'
+image: assets/images/c3po.png
+author: Han Solo Company
 ---
 
 <!-- YT video goes here -->

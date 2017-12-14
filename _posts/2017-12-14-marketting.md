@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Marketting
-description: Marketting maggle
+title: Marketing
+description: Marketing maggle
 image: assets/images/Star-Wars-Force-Awakens-C3po-Red-Arm-Backstory.jpg
 ---
 
