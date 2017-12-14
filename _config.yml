@@ -1,10 +1,10 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
+title: iBrainstorm
+subtitle: by Han Solo Company
 email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+description: Un droïde de protocole<br />conçu pour aider au brainstorming
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://ibrainstorm.heptacle.fr" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 author:
 street_address: 20 avenue ALbert Einstein
 city: Villeurbanne CEDEX
