@@ -7,7 +7,12 @@ image: null
 author: Han Solo Company
 ---
 
-<!-- YT video goes here -->
+<div style="margin: 0 auto; width: 900px;">
+  <video width="800" height="600" controls>
+   <source src="assets/video/Presentation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+</div>
 
 **iBrainstorm** est **LE** droïde de protocole ultime pour vos séances de créativité !
 
