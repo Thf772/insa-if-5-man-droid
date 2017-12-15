@@ -1,17 +1,17 @@
 # site settings
 title: iBrainstorm
 subtitle: by Han Solo Company
-email: youremailaddress@gmail.com
-description: Un droïde de protocole<br />conçu pour aider au brainstorming
+email: ibrainstorm@heptacle.fr
+description: Un droïde de protocole<br/>pour les brainstormer tous<br/>et dans les ténèbres les lier
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author:
-street_address: 20 avenue ALbert Einstein
+street_address: 20 avenue Albert Einstein
 city: Villeurbanne CEDEX
-state: 69
+state: null
 zip_code: 69621
 country: France
-phone:
+phone: +06 66 66 66 66
 
 # homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
@@ -21,13 +21,13 @@ tiles-count: 6
 500px_url:
 facebook_url:
 github_url:
-gitlab_url: 
-googleplus_url: 
-instagram_url: 
-linkedin_url: 
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
 pinterest_url:
 slack_url:
-twitter_url: 
+twitter_url:
 
 # build settings
 markdown: kramdown
