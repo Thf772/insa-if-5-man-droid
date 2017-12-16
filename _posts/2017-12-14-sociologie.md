@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sociologie
-description: Résumé et rapport sociologie avec entretiens, observations et bilan.
+description: Résumé et rapport sociologie avec entretiens, observations et bilan
 image: assets/images/c_3po_by_steveargyle-d9kb64r.jpg
 ---
 
