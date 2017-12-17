@@ -1,11 +1,12 @@
 ---
 layout: home
 title: iBrainstorm
-landing-title: 'iBrainstorm, LE Droïde de Brainstorming'
+landing-title: '<img src="assets/images/c3po.png" width="100" /> iBrainstorm, LE Droïde de Brainstorming'
 description: 'iBrainstorm, LE Droïde de Brainstorming'
 image: null
 author: Han Solo Company
 ---
+
 
 <div style="margin: 0 auto; width: 900px;">
   <video width="800" height="600" controls>
